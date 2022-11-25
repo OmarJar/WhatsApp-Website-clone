@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+
+    <title>WhatsApp</title>
+</head>
+
+<body id="body">
+    <!-- header and navbar -->
+    <div id="popup">
+        <div class="select-language">
+            <h1>Select your language</h1>
+            <svg onclick="toggle()" class="hide" xmlns="http://www.w3.org/2000/svg" x="0" y="0" width="9px"
+                height="20px" viewBox="0 0 9 20">
+                <polygon fill="#000000" points="1,9 4.5,12.5 8,9 "></polygon>
+            </svg>
+        </div>
+        <div class="languages-list">
+            <ul>
+                <li><a href="">azərbaycan</a></li>
+                <li><a href="">Afrikaans</a></li>
+                <li><a href="">Bahasa Indonesia</a></li>
+                <li><a href="">Melayu</a></li>
+                <li><a href="">català</a></li>
+                <li><a href="">čeština</a></li>
+                <li><a href="">dansk</a></li>
+                <li><a href="">Deutsch</a></li>
+                <li><a href="">eesti</a></li>
+                <li><a href="">English</a></li>
+                <li><a href="">español</a></li>
+                <li><a href="">français</a></li>
+                <li><a href="">Gaeilge</a></li>
+                <li><a href="">hrvatski</a></li>
+                <li><a href="">italiano</a></li>
+                <li><a href="">Kiswahili</a></li>
+                <li><a href="">latviešu</a></li>
+                <li><a href="">lietuvių</a></li>
+                <li><a href="">magyar</a></li>
+                <li><a href="">Nederlands</a></li>
+                <li><a href="">norsk bokmål</a></li>
+                <li><a href="">o‘zbek</a></li>
+                <li><a href="">Filipino</a></li>
+                <li><a href="">polski</a></li>
+                <li><a href="">Português (Brasil)</a></li>
+                <li><a href="">Português (Portugal)</a></li>
+                <li><a href="">română</a></li>
+                <li><a href="">shqip</a></li>
+                <li><a href="">slovenčina</a></li>
+                <li><a href="">slovenščina</a></li>
+                <li><a href="">suomi</a></li>
+                <li><a href="">svenska</a></li>
+                <li><a href="">Tiếng Việt</a></li>
+                <li><a href="">Türkçe</a></li>
+                <li><a href="">Ελληνικά</a></li>
+                <li><a href="">български</a></li>
+                <li><a href="">қазақ тілі</a></li>
+                <li><a href="">македонски</a></li>
+                <li><a href="">русский</a></li>
+                <li><a href="">српски</a></li>
+                <li><a href="">українська</a></li>
+                <li><a href="">עברית</a></li>
+                <li><a href="">العربية</a></li>
+                <li><a href="">فارسى</a></li>
+                <li><a href="">اردو</a></li>
+                <li><a href="">বাংলা</a></li>
+                <li><a href="">हिन्दी</a></li>
+                <li><a href="">ગુજરાતી</a></li>
+                <li><a href="">ಕನ್ನಡ</a></li>
+                <li><a href="">मराठी</a></li>
+                <li><a href="">ਪੰਜਾਬੀ</a></li>
+                <li><a href="">தமிழ்</a></li>
+                <li><a href="">తెలుగు</a></li>
+                <li><a href="">മലയാളം</a></li>
+                <li><a href="">ไทย</a></li>
+                <li><a href="">简体中文</a></li>
+                <li><a href="">繁體中文（台灣）</a></li>
+                <li><a href="">繁體中文（香港）</a></li>
+                <li><a href="">日本語</a></li>
+                <li><a href="">한국어</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="mySidenav" class="sidenav">
+        <img id="menu-img" src="images/big-what.svg" alt="">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><img src="images/close-btn.svg" alt=""></a>
+        <div class="links">
+            <a href="#">Download</a>
+            <a href="#">Features</a>
+            <a href="#">Privacy</a>
+            <a href="#">Help Center</a>
+            <a href="#">Get in touch</a>
+            <select>
+                <option>azərbaycan</option>
+                <option>Afrikaans</option>
+                <option>Bahasa Indonesia</option>
+                <option>Melayu</option>
+                <option>català</option>
+                <option>čeština</option>
+                <option>dansk</option>
+                <option>Deutsch</option>
+                <option>eesti</option>
+                <option selected="selected">English</option>
+                <option>español</option>
+                <option>français</option>
+                <option>Gaeilge</option>
+                <option>hrvatski</option>
+                <option>italiano</option>
+                <option>Kiswahili</option>
+                <option>latviešu</option>
+                <option>lietuvių</option>
+                <option>magyar</option>
+                <option>Nederlands</option>
+                <option>norsk bokmål</option>
+                <option>o‘zbek</option>
+                <option>Filipino</option>
+                <option>polski</option>
+                <option>Português (Brasil)</option>
+                <option>Português (Portugal)</option>
+                <option>română</option>
+                <option>shqip</option>
+                <option>slovenčina</option>
+                <option>slovenščina</option>
+                <option>suomi</option>
+                <option>svenska</option>
+                <option>Tiếng Việt</option>
+                <option>Türkçe</option>
+                <option>Ελληνικά</option>
+                <option>български</option>
+                <option>қазақ тілі</option>
+                <option>македонски</option>
+                <option>русский</option>
+                <option>српски</option>
+                <option>українська</option>
+                <option>עברית</option>
+                <option>العربية</option>
+                <option>فارسى</option>
+                <option>اردو</option>
+                <option>বাংলা</option>
+                <option>हिन्दी</option>
+                <option>ગુજરાતી</option>
+                <option>ಕನ್ನಡ</option>
+                <option>मराठी</option>
+                <option>ਪੰਜਾਬੀ</option>
+                <option>தமிழ்</option>
+                <option>తెలుగు</option>
+                <option>മലയാളം</option>
+                <option>ไทย</option>
+                <option>简体中文</option>
+                <option>繁體中文（台灣）</option>
+                <option>繁體中文（香港）</option>
+                <option>日本語</option>
+                <option>한국어</option>
+            </select>
+        </div>
+
+    </div>
+
+    <header>
+        <nav>
+            <ul id="navbar">
+                <li><a href="#"><img id="nav-img" src="images/navbar.svg" alt=""></a></li>
+                <li><a class="nav-item" href="#">WHATSAPP WEB</a></li>
+                <li><a class="nav-item" href="#">FEATURES</a></li>
+                <li><a class="nav-item" href="#">DOWNLOAD</a></li>
+                <li><a class="nav-item" href="#">PRIVACY</a></li>
+                <li><a class="nav-item" href="#">HELP CENTER</a></li>
+                <li>
+                    <span class="show-hide">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0" y="0" width="19px" height="19px"
+                            viewBox="0 0 19 19" style="enable-background:new 0 0 19 19;" role="img" space="preserve">
+                            <path d="M9.5,2C5.4,2,2,5.4,2,9.5S5.4,17,9.5,17c4.1,0,7.5-3.4,
+                            7.5-7.5S13.6,2,9.5,2z M14.7,6.5h-2.2c-0.2-1-0.6-1.8-1.1-2.7C12.8,
+                            4.3,14,
+                            5.2,14.7,
+                            6.5z M9.5,3.5c0.6,0.9,1.1,1.9,1.4,3H8.1C8.4,
+                            5.4,8.9,4.4,9.5,3.5z M3.7,
+                            11c-0.2-0.5-0.2-1-0.2-1.5C3.5,9,3.5,8.4,3.7,8h2.6C6.2,8.5,
+                            6.2,9,6.2,9.5c0,0.5,
+                            0.1,1,0.1,1.5H3.7z M4.3,12.5h2.2c0.2,1,0.6,1.8,
+                            1.1,2.7C6.2,14.7,5,13.8,4.3,
+                            12.5z M6.5,6.5H4.3c0.8-1.3,1.9-2.2,3.2-2.7C7.1,
+                            4.7,6.7,5.5,6.5,6.5z M9.5,
+                            15.5c-0.6-0.9-1.1-1.9-1.4-3h2.9C10.6,13.6,10.1,
+                            14.6,9.5,15.5z M11.2,
+                            11H7.8c-0.1-0.5-0.2-1-0.2-1.5c0-0.5,0.1-1,
+                            0.2-1.5h3.5c0.1,0.5,0.2,1,0.2,
+                            1.5C11.5,10,
+                            11.3,10.5,11.2,11z M11.5,15.2c0.5-0.8,0.8-1.7,1.1-2.7h2.2C14,
+                            13.8,12.8,14.7,11.5,
+                            15.2z M12.8,11c0.1-0.5,0.1-1,0.1-1.5c0-0.5-0.1-1-0.1-1.5h2.6c0.2,
+                            0.5,0.2,1,0.2,
+                            1.5c0,0.5-0.1,1.1-0.2,1.5H12.8z" fill="currentColor"></path>
+                        </svg>
+                        <button class="show-hide" onclick="toggle()">EN</button>
+                        <svg id="arrow" xmlns="http://www.w3.org/2000/svg" x="0"
+                            y="0" width="9px" height="20px" viewBox="0 0 9 20">
+                            <polygon fill="#FFFFFF" points="1,9 4.5,12.5 8,9 "></polygon>
+                        </svg></span>
+                </li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main body -->
+    <section class="section">
+        <div class="top-container">
+            <div class="second-container">
+                <div class="first-part">
+                    <img src="images/menu.svg" class="menu-logo" onclick="openNav()">
+                    <div class="simple-secure">
+                        <h2>Simple. Secure.<br />Reliable messaging.</h2>
+                        <p id="p-with">With WhatsApp, you'll get fast, simple, secure messaging and calling for free*,
+                            available on phones all over the world.</p>
+                        <p id="p-star">* Data charges may apply. Contact your provider for details.</p>
+                        <button class="download-now">DOWNLOAD NOW</button>
+                        <ul>
+                            <li>
+                                <img class="android-svg" src="images/android.svg">
+                                <a href="#">Android</a>
+                                <img class="arrow-svg" src="images/arrow.svg">
+                            </li>
+                            <li>
+                                <img class="iPhone-svg" src="images/iPhone.svg">
+                                <a href="#">iPhone</a>
+                                <img class="arrow-svg" src="images/arrow.svg">
+                            </li>
+                            <li>
+                                <img class="PC-svg" src="images/PC.svg">
+                                <a href="#">Mac or Windows PC</a>
+                                <img class="arrow-svg" src="images/arrow.svg">
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="whatsapp-img">
+                        <img src="images/whatsapp.png" alt="whatsapp" id="whatsapp">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div class="second-part">
+
+            <div class="third-container">
+                <div class="inner-container">
+                    <div class="left-business">
+                        <h1>WhatsApp Business App</h1>
+                        <p class="whatsapp-business"><span>WhatsApp Business</span> is a free to download app that was
+                            built with the small
+                            business owner in
+                            mind. Create a catalog to showcase your products and services. Connect with your customers
+                            easily by using tools to automate, sort and quickly respond to messages.</p>
+                        <p class="whatsapp-business">WhatsApp can also help medium and large businesses provide customer
+                            support and deliver
+                            important notifications to customers. Learn more about <span>WhatsApp Business API.</span>
+                        </p>
+                        <img src="images/whatsapp-catalog.png" class="catalog" alt="catalog">
+                    </div>
+                    <div class="circle-emoji">
+                        <div class="circle">
+                            <img id="hello" src="images/hello.svg" alt="">
+                        </div>
+                        <h3>END-TO-END ENCRYPTION</h3>
+                        <h1>Security by Default</h1>
+                        <p>Some of your most personal moments are shared on WhatsApp, which is why we built end-to-end
+                            encryption into the latest versions of our app. When end-to-end encrypted, your messages and
+                            calls are secured so only you and the person you're communicating with can read or listen to
+                            them, and nobody in between, not even WhatsApp.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="third-part">
+            <!-- button -->
+            <a href=""><span>EXPLORE FEATURES</span></a>
+        </div>
+    </section>
+
+    <!-- footer part -->
+    <footer>
+        <div class="top-foot">
+
+            <div class="foot-menu">
+                <ul>
+                    <li>WHATSAPP</li>
+                    <li>Features</li>
+                    <li>Download</li>
+                    <li>WhatsApp Web</li>
+                    <li>Business</li>
+                    <li>Privacy</li>
+                </ul>
+                <ul>
+                    <li>COMPANY</li>
+                    <li>About</li>
+                    <li>Careers</li>
+                    <li>Brand Center</li>
+                    <li>Get in touch</li>
+                    <li>Blog</li>
+                    <li>WhatsApp Stories</li>
+                </ul>
+                <ul>
+                    <li>DOWNLOAD</li>
+                    <li>Mac/PC</li>
+                    <li>Android</li>
+                    <li>iPhone</li>
+                </ul>
+                <ul>
+                    <li>HELP</li>
+                    <li>Help Center</li>
+                    <li>Twitter</li>
+                    <li>Facebook</li>
+                    <li>Coronavirus</li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="bottom-foot">
+            <div class="dodo">
+                <h4>2022 © WhatsApp LLC</h4>
+                <div class="privacy-terms">
+                    <a href="">Privacy & Terms</a>
+                    <img src="images/white-arrow.svg" class="arrow-svg" alt="">
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
