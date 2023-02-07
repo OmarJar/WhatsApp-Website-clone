@@ -363,7 +363,6 @@ nav>ul>li:nth-child(7)>span>* {
     height: 897px;
     width: 100%;
     max-height: auto;
-    max-height: auto;
     margin-left: 16px;
     margin-right: auto;
     margin-top: 50px;
@@ -729,7 +728,7 @@ footer {
         transition: 0.4s;
         padding-top: 38px;
     }
-
+    
     .sidenav>img {
         position: absolute;
         left: 22px;
